@@ -1,7 +1,7 @@
 package go_say_hello
 
-func SayHello()string{
-	return "Hello world"
+func SayHello(name string)string{
+	return "Hello " + name
 }
 
 /**
@@ -17,4 +17,11 @@ func SayHello()string{
  * 
  * UPGRADE MODULE
  * Untuk upgrade module cukup dengan membuat tag baru pada git
+ * disarankan jika melakukan upgrade sekecil apapun versinya juga diubah 
+ * hal ini untuk menghindari module tidak terdownload pada project yang menggunakannya 
+ * 
+ * MAJOR UPGRADE
+ * Major update biasanya terjadi dikarenakan ada perubahan pada isi kode program sehingga membuatnya tidak backward compatible
+ * Sebaiknya hal ini sebisa mungkin untuk dihindari
+ * Namun jika tidak bisa dihindari, stategi terbaik adalah merubah nama module
  */
